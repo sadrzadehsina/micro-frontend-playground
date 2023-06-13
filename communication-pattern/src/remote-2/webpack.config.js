@@ -8,6 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     publicPath: "/",
   },
+  devServer: {
+    port: 3002
+  },
   module: {
     rules: [
       {
