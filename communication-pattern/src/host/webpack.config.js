@@ -10,7 +10,6 @@ module.exports = {
   entry: "/src/index.jsx",
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "/",
   },
   devServer: {
     port: 3000,
@@ -53,8 +52,9 @@ module.exports = {
       name: "host",
       exposes: {},
       remotes: {
-        "remote-1": "remote-1@http://localhost:3001/remoteEntry.js",
-        "remote-2": "remote-2@http://localhost:3002/remoteEntry.js",
+        "remote_one": "remote_one@http://localhost:3001/remote_one.js",
+        "remote_two": "remote_two@http://localhost:3002/remote_two.js",
+        'hub': 'hub@http://localhost:3003/hub.js',
       },
       shared: {
         ...packageJson.dependencies,

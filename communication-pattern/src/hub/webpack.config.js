@@ -9,10 +9,9 @@ module.exports = {
   entry: "/src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "/",
   },
   devServer: {
-    port: 3001,
+    port: 3003,
   },
   module: {
     rules: [
