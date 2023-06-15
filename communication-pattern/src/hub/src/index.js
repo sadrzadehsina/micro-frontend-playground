@@ -1,18 +1,17 @@
 import { useTheme } from "./theme";
 import { useToast } from "./toast";
 
-export function useHubActions() {
-  const { setTheme } = useTheme();
+const commands = {
+  setTheme: useTheme.getState().setTheme,
+  showToast: useToast.getState().showToast,
+};
 
-  const { showToast } = useToast();
+export const Hub = {
+  runCommand: (command, payload) => commands[command](payload),
+  useValues,
+};
 
-  return {
-    setTheme,
-    showToast,
-  };
-}
-
-export function useHubValues() {
+function useValues() {
   const { theme } = useTheme();
   const { toast } = useToast();
 

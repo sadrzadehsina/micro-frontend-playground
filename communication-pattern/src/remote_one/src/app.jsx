@@ -1,12 +1,11 @@
-import { useHubActions } from "hub";
+import { Hub  } from "hub";
 
 function App() {
-  const { setTheme } = useHubActions();
 
   return (
     <div className="App">
       <h1>Remote 1</h1>
-      <button onClick={() => setTheme("light")}>set theme</button>
+      <button onClick={() => Hub.runCommand('setTheme', 'dark')}>set theme</button>
     </div>
   );
 }

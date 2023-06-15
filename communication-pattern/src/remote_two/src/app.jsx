@@ -1,12 +1,10 @@
-import { useHubActions } from "hub";
+import { Hub } from "hub";
 
 function App() {
-  const { showToast } = useHubActions();
-
   return (
     <div className="App">
       <h1>Remote 2</h1>
-      <button onClick={() => showToast("toast")}>show toast</button>
+      <button onClick={() => Hub.runCommand('showToast', 'this is a message')}>show toast</button>
     </div>
   );
 }

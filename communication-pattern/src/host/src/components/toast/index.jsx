@@ -1,9 +1,7 @@
-import { useHubValues } from 'hub';
+import { Hub } from "hub";
 
 export function Toast() {
-
-  const { toast } = useHubValues();
+  const { toast } = Hub.useValues();
 
   console.log(toast);
-
 }

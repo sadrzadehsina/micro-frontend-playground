@@ -1,8 +1,8 @@
-import { useHubValues } from 'hub';
+import { Hub } from 'hub';
 
 export function ThemeSwitch() {
 
-  const { theme } = useHubValues();
+  const { theme } = Hub.useValues();
 
   console.log(theme);
 
