@@ -48,7 +48,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-
     new ModuleFederationPlugin({
       name: "remote_two",
       exposes: {
