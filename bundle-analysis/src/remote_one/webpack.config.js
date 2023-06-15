@@ -53,9 +53,7 @@ module.exports = {
       exposes: {
         '.': './src/app.jsx',
       },
-      remotes: {
-        'hub': 'hub@http://localhost:3003/hub.js',
-      },
+      remotes: {},
       shared: {
         ...packageJson.dependencies,
         react: {
