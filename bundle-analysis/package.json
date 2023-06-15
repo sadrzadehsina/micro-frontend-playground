@@ -1,0 +1,10 @@
+{
+  "name": "bundle-analysis",
+  "version": "1.0.0",
+  
+  "workspaces": [
+    "./src/host",
+    "./src/remote_one",
+    "./src/remote_two"
+  ]
+}
