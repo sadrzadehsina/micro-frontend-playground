@@ -53,8 +53,7 @@ module.exports = {
       exposes: {},
       remotes: {
         "remote_one": "remote_one@http://localhost:3001/remote_one.js",
-        "remote_two": "remote_two@http://localhost:3002/remote_two.js",
-        'hub': 'hub@http://localhost:3003/hub.js',
+        "remote_two": "remote_two@http://localhost:3002/remote_two.js"
       },
       shared: {
         ...packageJson.dependencies,
