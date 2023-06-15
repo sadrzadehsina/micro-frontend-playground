@@ -3,6 +3,9 @@
   "version": "1.0.0",
   
   "workspaces": [
-    "./src/host"
+    "./src/host",
+    "./src/hub",
+    "./src/remote_one",
+    "./src/remote_two"
   ]
 }
